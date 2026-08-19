@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class ComparatorExample {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("John");
+        names.add("Alice");
+        names.add("David");
+        names.add("Bob");
+
+        Collections.sort(names, (a, b) -> b.compareTo(a));
+
+        System.out.println(names);
+    }
+}
